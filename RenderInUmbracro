@@ -1,0 +1,23 @@
+Rendering 
+
+1. Content editor: Markdown editor
+
+2. Code snippet:
+
+<body>
+
+    <p>Here is one mermaid diagram:</p>
+
+<pre class="mermaid">
+        @Html.StripHtml(Model.Value<string>("homeContent"), "p")
+</pre>
+
+<script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+</script>
+</body>
+
+TODO: 
+1. Make into component
+2. Install NPM as package instead of script tag at end
