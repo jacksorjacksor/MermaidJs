@@ -28,6 +28,7 @@ https://diagramix.ai/
 
 ```
 flowchart TD
+
     A[Start] --> B[Choose Topic]
     B --> C[Research Mermaid JS]
     C --> D[Outline Key Points]
