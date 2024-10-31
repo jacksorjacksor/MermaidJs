@@ -10,7 +10,7 @@ pie title Is this a pie chart?
 
 ```
 
-```
+```mermaid
 flowchart LR
 
 A[Hard] -->|Text| B(Round)
@@ -26,7 +26,7 @@ https://diagramix.ai/
 
 ![image](https://github.com/user-attachments/assets/5eb8533d-4ca8-41dd-be9a-29d6d013c98e)
 
-```
+```mermaid
 flowchart TD
 
     A[Start] --> B[Choose Topic]
