@@ -4,11 +4,9 @@ Pie Chart = yes, yes but yellow
 
 ```mermaid
 
-pie title Pets adopted by volunteers
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 15
-
+pie title Is this a pie chart?
+    "Yes" : 386
+    "Yes but purple" : 85
 
 ```
 
