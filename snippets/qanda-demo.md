@@ -1,4 +1,7 @@
 ```mermaid
+%%{init:
+{'theme':'forest'}
+}%%
 flowchart TD
 A([Start Q&A])
 B{Any questions?}
