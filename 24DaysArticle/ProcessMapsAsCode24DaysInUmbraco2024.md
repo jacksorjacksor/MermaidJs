@@ -18,6 +18,8 @@ One of the main sticking points I've had with these talks are around business im
 
 And it turns out that other people have considered this too.
 
+![alt text](mermaid-logo.png)
+
 ## Mermaid: Introduction
 
 [Mermaid](https://github.com/mermaid-js/mermaid) (aka Mermaid.js) provides developers with a code-first approach to process mapping. Using a Markdown-inspired syntax, Mermaid renders code into an SVG image format to be displayed in browser or exported as a file. The mission statement is clear: "The main purpose of Mermaid is to help documentation catch up with development." ([README.md](https://github.com/mermaid-js/mermaid)).
@@ -147,8 +149,7 @@ Another potential use would be to create a build action for an AI agent to revie
 
 The intention of this article has been to show how Mermaid can be used to incorporate the practice of process maps into a development life cycle. Mermaid can be used to create clearly understandable, high-level overviews which take little effort to make and are easy to distribute. 
 
-(Somewhat like a meme)
-
+![alt text](mermaid-docs-meme.png)
 
 Links:
 
