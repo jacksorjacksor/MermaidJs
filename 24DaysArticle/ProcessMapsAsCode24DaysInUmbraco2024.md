@@ -76,9 +76,11 @@ GitHub has natively supported Mermaid for any Markdown file since 2022, complete
 
 To use Mermaid with GitHub, create a Markdown file and add code such as the below snippet.
 
--- SNIPPET --
+-- SNIPPET: github_integration.md --
 
 This will then render the Mermaid diagram, complete with a navigation widget.
+
+![alt text](image-8.png)
 
 There's no built-in way to save the diagram as a static image (i.e. export as PNG), though this could potentially be achieved through some fun GitHub Actions + Mermaid CLI malarky.
 
