@@ -2,16 +2,17 @@ Let's talk about memes.
 
 [ Umbraco themed memes ]
 
-Memes are 
+![alt text](image-12.png)
 
+![alt text](image-13.png)
 
+Internet memes, in this static image with text format, are fascinating to me. They're clearly understandable, provide a high-level overview of a perspective, take little effort to make and are easy to distribute. Plus, these memes are in themselves [memes](https://en.wikipedia.org/wiki/Meme), but that's for another blog.
 
 But there's one meme which has haunted me for a long while now, and it is this:
 
+![alt text](image-14.png)
 
-[ ]
-
-I've talked about this meme for a long while now, at events in Cardiff, Bristol and London - and by gum did it put them on the map! This meme's largely featured while I extoll the virtues of process mapping - creating high-level visual representations of workflows to codify a process in an easily understood, easily shared format.
+I've talked about this meme for a long while now, at events in [Cardiff](https://youtu.be/tLUzy77B6zA), [Bristol](https://youtu.be/DYhIDSFs7Zs) and [London](https://youtu.be/yEtDQRSHTx8) - and by gum did it put them on the map! This meme's largely featured while I extoll the virtues of process mapping - creating high-level visual representations of workflows to codify a process in an easily understood, easily shared format.
 
 One of the main sticking points I've had with these talks are around business implementation of such a process. While can I yell "Process maps are a good idea actually" into the wind, unless there's a way to incorporate the creation, sharing and updating of these process maps in an easy to use, developer-friendly fashion, then this concept just stays as being A Nice Idea.
 
@@ -20,6 +21,8 @@ And it turns out that other people have considered this too.
 # Mermaid: Introduction
 
 [Mermaid](https://github.com/mermaid-js/mermaid) (aka Mermaid.js) provides developers with a code-first approach to process mapping. Using a Markdown-inspired syntax, Mermaid renders code into an SVG image format to be displayed in browser or exported as a file. The mission statement is clear: "The main purpose of Mermaid is to help documentation catch up with development." ([README.md](https://github.com/mermaid-js/mermaid)).
+
+Through enabling process maps to have a Markdown file as their source, Mermaid allows maps to be created by developers through code, rather than a graphics package. With native support within GitHub, GitLab and Azure DevOps, these files can be stored and read within the repo themselves, rather than requiring propritory software of licenses to access them. Mermaid's code-first nature also opens out the possibilities for automated tools and agents to generate and update the process maps, which in turn can be used to define and refine the codebase's core functionality. All this, without requring the developer to learn to use a graphics package - it's just more code.
 
 Mermaid was also the winner of the [JS Open Source Awards (2019)](https://osawards.com/javascript/2019) award for "The most exciting use of technology" - which, when you consider the uses of, um, technology, that's pretty something.
 
@@ -120,8 +123,30 @@ The Mermaid Live Editor is something of a taster of [Mermaid Chart](https://www.
 
 # Mermaid + AI
 
+Mermaid's syntax provides a shared point of reference between developer and AI agent. Mermaid Chart itself provides [native plug-ins](https://www.mermaidchart.com/plugins) for ChatGPT and GitHub Copilot, along with its own [Mermaid AI](https://www.mermaidchart.com/mermaid-ai).
 
+Even without these dedicated plug-ins, AI tools such as Copilot can be used to generate Mermaid diagrams from natural language prompts. A potential workflow would be to use natural language to define business requirements, use an AI tool to create the Mermaid chart, then build the code based around the Mermaid chart. This process can then feed into itself to further refine the business requirements and codebase, becoming a natural part of the development cycle.
 
+Here's a Mermaid diagram showing this, with code generated using Microsoft Copilot.
+![alt text](image-16.png)
+
+I asked Microsoft Copilot to provide some reasons for using Mermaid alongside Copilot - and while only the third point mentions Copilot, it was nice to see the results:
+
+- Clarity and Precision: Mermaid diagrams can provide a clear and precise representation of business requirements, reducing the chances of misunderstandings or misinterpretations.
+
+- Enhanced Collaboration: Visual diagrams can facilitate better collaboration among team members, as they provide a common reference point that is easy to understand.
+
+- Streamlined Development: By using Copilot to generate code based on well-defined requirements, you can streamline the development process and ensure that the code aligns closely with the business needs.
+
+- Improved Documentation: Mermaid diagrams can serve as part of the project documentation, making it easier to maintain and update the project in the future.
+
+Another potential use would be to create a build action for an AI agent to review the codebase, determine whether the Mermaid chart still represented the code's functionality, and then update on either side - either the Mermaid diagram is out of doubt or the code is doing something it shouldn't do.
+
+# Conclusion
+
+The intention of this article has been to show how Mermaid can be used to incorporate the practice of process maps into a development life cycle. Mermaid can be used to create clearly understandable, high-level overviews which take little effort to make and are easy to distribute. 
+
+Just like a meme.
 
 
 Links:
