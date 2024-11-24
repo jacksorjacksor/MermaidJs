@@ -84,12 +84,32 @@ This will then render the Mermaid diagram, complete with a navigation widget.
 
 There's no built-in way to save the diagram as a static image (i.e. export as PNG), though this could potentially be achieved through some fun GitHub Actions + Mermaid CLI malarky.
 
-- Umbraco v13
+- Umbraco v13 (HTML/JS)
 
+Here is one of the many different ways to render a Mermaid diagram through Umbraco v13, using Razor pages for the front-end:
 
+1. Create Markdown Content Editor
 
+Create a Markdown Content Editor specifically to hold any Mermaid syntax. Adding the Mermaid language identifier is not required.
+
+2. Razor Template - Handle
+
+Render the contents of the Markdown Content Editor, using `Html.StripHtml()` to remove `<p>` tags.
+
+-- SNIPPET: github_integration.md --
+
+3. Razor Template - Install & Import Mermaid 
+
+Ensure that the page in question has access to the Mermaid package. You can install the Mermaid package through your [JavaScript package manager of choice](https://mermaid.js.org/config/usage.html#installing-and-hosting-mermaid-on-a-webpage), though for this example I'll be using the [CDN link](https://mermaid.js.org/config/usage.html#cdn). Here's a snippet which uses the CDN to import Mermaid.
+
+-- SNIPPET: umbraco_v13_integration_cdn --
+
+4. ...it should just work?
+
+That's all that should be required to render Mermaid through an Umbraco v13 site!
 
 - Mermaid Live (exporting images)
+
 
 
 # Mermaid + AI
