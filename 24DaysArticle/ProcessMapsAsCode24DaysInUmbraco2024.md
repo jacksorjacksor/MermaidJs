@@ -68,7 +68,7 @@ The final Mermaid syntax feature I wanted to highlight was how one checks which 
 
 # Mermaid: Integrations
 
-Mermaid has [integrations with numerous platforms](https://mermaid.js.org/ecosystem/integrations-community.html), allowing Mermaid to be rendered in many different settings and contexts. For this blog we'll look at three platfoms specifically - GitHub, Umbraco v13 (i.e. HTML/JS) and Mermaid Live.
+Mermaid has [integrations with numerous platforms](https://mermaid.js.org/ecosystem/integrations-community.html), allowing Mermaid to be rendered in many different settings and contexts. For this blog we'll look at three platfoms specifically - GitHub, Umbraco v13 (i.e. HTML/JS) and Mermaid Live Editor.
 
 - GitHub
 
@@ -108,9 +108,15 @@ Ensure that the page in question has access to the Mermaid package. You can inst
 
 That's all that should be required to render Mermaid through an Umbraco v13 site!
 
-- Mermaid Live (exporting images)
+I'm sure there are all sorts of crazy ways that Umbraco can make use of Mermaid's API and CLI tools, so I'll leave those for the community to explore!
 
+- Mermaid Live Editor
 
+[Mermaid Live Editor](https://mermaid.live/) is a space for quickly creating and rendering Mermaid diagrams. The rendering on the right automatically syncs with the code on the left, providing a quick and easy location for creating Mermaid diagrams. There is also native support for exporting the diagrams as image files and support for GitHub Gists.
+
+![alt text](image-11.png)
+
+The Mermaid Live Editor is something of a taster of [Mermaid Chart](https://www.mermaidchart.com/), the commercialised side of Mermaid. While Mermaid itself is open-source and free for use, Mermaid Chart is a dedicated platform with paid tiers of use for tooling to support Mermaid usage and sharing.
 
 # Mermaid + AI
 
